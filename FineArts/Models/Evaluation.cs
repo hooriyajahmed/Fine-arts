@@ -21,5 +21,6 @@
         public Painting Painting { get; set; }
 
         public Staff Staff { get; set; }
+
     }
 }

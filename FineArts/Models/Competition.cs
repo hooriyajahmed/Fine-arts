@@ -2,6 +2,7 @@
 {
     public class Competition
     {
+
         public int CompetitionId { get; set; }
 
         public string CompetitionTitle { get; set; }
@@ -20,8 +21,6 @@
 
         public Staff Staff { get; set; }
 
-        //public ICollection<Painting> Paintings { get; set; }
 
-        //public ICollection<Award> Awards { get; set; }
     }
 }

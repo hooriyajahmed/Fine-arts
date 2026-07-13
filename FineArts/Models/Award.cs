@@ -19,5 +19,6 @@
         public Competition Competition { get; set; }
 
         public Student Student { get; set; }
+
     }
 }

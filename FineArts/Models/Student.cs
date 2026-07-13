@@ -1,3 +1,4 @@
+
 ﻿using FineArts.Areas.Identity.Data;
 
 namespace FineArts.Models
@@ -28,10 +29,8 @@ namespace FineArts.Models
 
         public string Course { get; set; }
 
-       
-        //public ICollection<Painting> Paintings { get; set; }
 
-        //public ICollection<Award> Awards { get; set; }
 
     }
+    
 }
