@@ -1,6 +1,8 @@
 ﻿using FineArts.Areas.Identity.Data;
 using FineArts.Models;
+
 using Microsoft.AspNetCore.Identity;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,6 +11,7 @@ namespace FineArts.Controllers
     public class StudentController : Controller
     {
         private readonly ApplicationDBContext _context;
+
         private readonly UserManager<user> _userManager;
 
         public StudentController(
@@ -18,7 +21,7 @@ namespace FineArts.Controllers
             _context = context;
             _userManager = userManager;
         }
-       
+
         public IActionResult Dashboard()
         {
             return View();
@@ -59,13 +62,41 @@ namespace FineArts.Controllers
             return View();
         }
         // GET: Student
-        public IActionResult Index()
+    
+  
+   
+        // GET: Student
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var students = await _context.students
+                .Include(s => s.User)
+                .ToListAsync();
+
+            return View(students);
+        }
+
+        // GET: Student/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var student = await _context.students
+                .Include(s => s.User)
+                .FirstOrDefaultAsync(m => m.StudentId == id);
+
+            if (student == null)
+            {
+                return NotFound();
+            }
+
+            return View(student);
         }
 
         // GET: Student/Create
-        [HttpGet]
+
         public IActionResult Create()
         {
             return View();
@@ -76,6 +107,7 @@ namespace FineArts.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Student student)
         {
+
             if (!ModelState.IsValid)
             {
                 return View(student);
@@ -115,6 +147,109 @@ namespace FineArts.Controllers
             TempData["Success"] = "Student registration completed successfully.";
 
             return RedirectToAction("Index", "Home");
+
+            if (ModelState.IsValid)
+            {
+                _context.Add(student);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(student);
         }
     }
 }
+//        // GET: Student/Edit/5
+//        public async Task<IActionResult> Edit(int? id)
+//        {
+//            if (id == null)
+//            {
+//                return NotFound();
+//            }
+
+//            var student = await _context.students.FindAsync(id);
+
+//            if (student == null)
+//            {
+//                return NotFound();
+//            }
+
+//            return View(student);
+//        }
+
+//        // POST: Student/Edit/5
+//        [HttpPost]
+//        [ValidateAntiForgeryToken]
+//        public async Task<IActionResult> Edit(int id, Student student)
+//        {
+//            if (id != student.StudentId)
+//            {
+//                return NotFound();
+//            }
+
+//            if (ModelState.IsValid)
+//            {
+//                try
+//                {
+//                    _context.Update(student);
+//                    await _context.SaveChangesAsync();
+//                }
+//                catch (DbUpdateConcurrencyException)
+//                {
+//                    if (!StudentExists(student.StudentId))
+//                    {
+//                        return NotFound();
+//                    }
+
+//                    throw;
+//                }
+
+//                return RedirectToAction(nameof(Index));
+//            }
+
+//            return View(student);
+//        }
+
+//        // GET: Student/Delete/5
+//        public async Task<IActionResult> Delete(int? id)
+//        {
+//            if (id == null)
+//            {
+//                return NotFound();
+//            }
+
+//            var student = await _context.students
+//                .Include(s => s.User)
+//                .FirstOrDefaultAsync(m => m.StudentId == id);
+
+//            if (student == null)
+//            {
+//                return NotFound();
+//            }
+
+//            return View(student);
+//        }
+
+//        // POST: Student/Delete/5
+//        [HttpPost, ActionName("Delete")]
+//        [ValidateAntiForgeryToken]
+//        public async Task<IActionResult> DeleteConfirmed(int id)
+//        {
+//            var student = await _context.students.FindAsync(id);
+
+//            if (student != null)
+//            {
+//                _context.students.Remove(student);
+//                await _context.SaveChangesAsync();
+//            }
+
+//            return RedirectToAction(nameof(Index));
+//        }
+
+//        private bool StudentExists(int id)
+//        {
+//            return _context.students.Any(e => e.StudentId == id);
+
+//        }
+//    }
+//}

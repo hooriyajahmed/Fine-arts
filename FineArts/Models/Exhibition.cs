@@ -2,6 +2,7 @@
 {
     public class Exhibition
     {
+
         public int ExhibitionId { get; set; }
 
         public string ExhibitionName { get; set; }
@@ -17,4 +18,6 @@
         //public ICollection<ExhibitionPainting> ExhibitionPaintings { get; set; }
     
 }
-}
+    }
+
+

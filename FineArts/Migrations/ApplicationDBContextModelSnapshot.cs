@@ -158,14 +158,21 @@ namespace FineArts.Migrations
                     b.Property<int>("StaffId")
                         .HasColumnType("int");
 
+                    b.Property<int>("Staff_Id")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("imageurl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CompetitionId");
 
                     b.HasIndex("StaffId");
 
-                    b.ToTable("compettions");
+                    b.ToTable("Competition");
                 });
 
             modelBuilder.Entity("FineArts.Models.Customer", b =>

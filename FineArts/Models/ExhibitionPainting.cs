@@ -2,6 +2,7 @@
 {
     public class ExhibitionPainting
     {
+
         public int ExhibitionPaintingId { get; set; }
 
         public int ExhibitionId { get; set; }
@@ -21,6 +22,7 @@
         public Painting Painting { get; set; }
 
         //public ICollection<PaintingSale> PaintingSales { get; set; }
+
 
     }
 }

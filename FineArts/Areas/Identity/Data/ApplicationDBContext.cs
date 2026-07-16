@@ -12,7 +12,7 @@ public class ApplicationDBContext : IdentityDbContext<user>
     {
     }
     public DbSet<Student> students { get; set; }
-    public DbSet<Competition> compettions { get; set; }
+    public DbSet<Competition> Competition { get; set; }
     public DbSet<Customer> customers { get; set; }
     public DbSet<Evaluation> evaluations { get; set; }
     public DbSet<Exhibition> exhibitions { get; set; }
