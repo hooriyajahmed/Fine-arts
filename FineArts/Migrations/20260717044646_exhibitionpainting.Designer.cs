@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FineArts.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20260712185648_staffs")]
-    partial class staffs
+    [Migration("20260717044646_exhibitionpainting")]
+    partial class exhibitionpainting
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -88,6 +88,281 @@ namespace FineArts.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+                });
+
+            modelBuilder.Entity("FineArts.Models.Award", b =>
+                {
+                    b.Property<int>("AwardId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AwardId"));
+
+                    b.Property<DateTime>("AwardDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("AwardTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CompetitionId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("PrizeAmount")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Remarks")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
+
+                    b.HasKey("AwardId");
+
+                    b.HasIndex("CompetitionId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("Award");
+                });
+
+            modelBuilder.Entity("FineArts.Models.Competition", b =>
+                {
+                    b.Property<int>("CompetitionId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CompetitionId"));
+
+                    b.Property<string>("AwardDetails")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CompetitionTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Conditions")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("StaffId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Staff_Id")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("imageurl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CompetitionId");
+
+                    b.HasIndex("StaffId");
+
+                    b.ToTable("competitions");
+                });
+
+            modelBuilder.Entity("FineArts.Models.Customer", b =>
+                {
+                    b.Property<int>("CustomerId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CustomerId"));
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CustomerName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CustomerId");
+
+                    b.ToTable("Customer");
+                });
+
+            modelBuilder.Entity("FineArts.Models.Evaluation", b =>
+                {
+                    b.Property<int>("EvaluationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EvaluationId"));
+
+                    b.Property<DateTime>("EvaluationDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("PaintingId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Remark")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("StaffId")
+                        .HasColumnType("int");
+
+                    b.HasKey("EvaluationId");
+
+                    b.HasIndex("PaintingId");
+
+                    b.HasIndex("StaffId");
+
+                    b.ToTable("evaluations");
+                });
+
+            modelBuilder.Entity("FineArts.Models.Exhibition", b =>
+                {
+                    b.Property<int>("ExhibitionId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ExhibitionId"));
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ExhibitionDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ExhibitionName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Venue")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ExhibitionId");
+
+                    b.ToTable("exhibitions");
+                });
+
+            modelBuilder.Entity("FineArts.Models.ExhibitionPainting", b =>
+                {
+                    b.Property<int>("ExhibitionPaintingId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ExhibitionPaintingId"));
+
+                    b.Property<int>("ExhibitionId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PaintingId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("QuotedPrice")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("SoldPrice")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("ExhibitionPaintingId");
+
+                    b.HasIndex("ExhibitionId");
+
+                    b.HasIndex("PaintingId");
+
+                    b.ToTable("exhibitionpaintings");
+                });
+
+            modelBuilder.Entity("FineArts.Models.Painting", b =>
+                {
+                    b.Property<int>("PaintingId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PaintingId"));
+
+                    b.Property<int>("CompetitionId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImagePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PaintingTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("SubmissionDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("PaintingId");
+
+                    b.HasIndex("CompetitionId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("paintings");
+                });
+
+            modelBuilder.Entity("FineArts.Models.PaintingSale", b =>
+                {
+                    b.Property<int>("PaintingSaleId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PaintingSaleId"));
+
+                    b.Property<decimal>("Amount")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ExhibitionPaintingId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("SaleDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("PaintingSaleId");
+
+                    b.HasIndex("CustomerId");
+
+                    b.HasIndex("ExhibitionPaintingId");
+
+                    b.ToTable("PaintingSale");
                 });
 
             modelBuilder.Entity("FineArts.Models.Staff", b =>
@@ -330,6 +605,112 @@ namespace FineArts.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("FineArts.Models.Award", b =>
+                {
+                    b.HasOne("FineArts.Models.Competition", "Competition")
+                        .WithMany()
+                        .HasForeignKey("CompetitionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("FineArts.Models.Student", "Student")
+                        .WithMany()
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Competition");
+
+                    b.Navigation("Student");
+                });
+
+            modelBuilder.Entity("FineArts.Models.Competition", b =>
+                {
+                    b.HasOne("FineArts.Models.Staff", "Staff")
+                        .WithMany()
+                        .HasForeignKey("StaffId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Staff");
+                });
+
+            modelBuilder.Entity("FineArts.Models.Evaluation", b =>
+                {
+                    b.HasOne("FineArts.Models.Painting", "Painting")
+                        .WithMany()
+                        .HasForeignKey("PaintingId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("FineArts.Models.Staff", "Staff")
+                        .WithMany()
+                        .HasForeignKey("StaffId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Painting");
+
+                    b.Navigation("Staff");
+                });
+
+            modelBuilder.Entity("FineArts.Models.ExhibitionPainting", b =>
+                {
+                    b.HasOne("FineArts.Models.Exhibition", "Exhibition")
+                        .WithMany()
+                        .HasForeignKey("ExhibitionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("FineArts.Models.Painting", "Painting")
+                        .WithMany()
+                        .HasForeignKey("PaintingId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Exhibition");
+
+                    b.Navigation("Painting");
+                });
+
+            modelBuilder.Entity("FineArts.Models.Painting", b =>
+                {
+                    b.HasOne("FineArts.Models.Competition", "Competition")
+                        .WithMany()
+                        .HasForeignKey("CompetitionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("FineArts.Models.Student", "Student")
+                        .WithMany()
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Competition");
+
+                    b.Navigation("Student");
+                });
+
+            modelBuilder.Entity("FineArts.Models.PaintingSale", b =>
+                {
+                    b.HasOne("FineArts.Models.Customer", "Customer")
+                        .WithMany()
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("FineArts.Models.ExhibitionPainting", "ExhibitionPainting")
+                        .WithMany()
+                        .HasForeignKey("ExhibitionPaintingId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+
+                    b.Navigation("ExhibitionPainting");
                 });
 
             modelBuilder.Entity("FineArts.Models.Staff", b =>

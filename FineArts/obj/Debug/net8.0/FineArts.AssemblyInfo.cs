@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FineArts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92b3bff2cd53a33ed864cff66d1265243b5c0865")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7938526254da58bb671bb892d3fec70cebba1bcd")]
 [assembly: System.Reflection.AssemblyProductAttribute("FineArts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FineArts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

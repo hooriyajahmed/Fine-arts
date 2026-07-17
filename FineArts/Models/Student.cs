@@ -1,10 +1,12 @@
 
 ﻿using FineArts.Areas.Identity.Data;
+using System.ComponentModel.DataAnnotations;
 
 namespace FineArts.Models
 {
     public class Student
     {
+        [Key]
         public int StudentId { get; set; }
 
         public string? UserId { get; set; }

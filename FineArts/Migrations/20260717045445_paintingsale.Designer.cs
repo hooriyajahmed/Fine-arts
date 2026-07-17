@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FineArts.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20260715060131_staff")]
-    partial class staff
+    [Migration("20260717045445_paintingsale")]
+    partial class paintingsale
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -125,7 +125,7 @@ namespace FineArts.Migrations
 
                     b.HasIndex("StudentId");
 
-                    b.ToTable("awards");
+                    b.ToTable("Award");
                 });
 
             modelBuilder.Entity("FineArts.Models.Competition", b =>
@@ -147,9 +147,6 @@ namespace FineArts.Migrations
                     b.Property<string>("Conditions")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("CreatedBy")
-                        .HasColumnType("int");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -175,7 +172,7 @@ namespace FineArts.Migrations
 
                     b.HasIndex("StaffId");
 
-                    b.ToTable("Competition");
+                    b.ToTable("competitions");
                 });
 
             modelBuilder.Entity("FineArts.Models.Customer", b =>
@@ -204,7 +201,7 @@ namespace FineArts.Migrations
 
                     b.HasKey("CustomerId");
 
-                    b.ToTable("customers");
+                    b.ToTable("Customer");
                 });
 
             modelBuilder.Entity("FineArts.Models.Evaluation", b =>
@@ -218,22 +215,10 @@ namespace FineArts.Migrations
                     b.Property<DateTime>("EvaluationDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ImprovementRemarks")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("MarksCategory")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NegativeRemarks")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("PaintingId")
                         .HasColumnType("int");
 
-                    b.Property<string>("PositiveRemarks")
+                    b.Property<string>("Remark")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -295,9 +280,6 @@ namespace FineArts.Migrations
                     b.Property<int>("PaintingId")
                         .HasColumnType("int");
 
-                    b.Property<bool>("PaymentGiven")
-                        .HasColumnType("bit");
-
                     b.Property<decimal>("QuotedPrice")
                         .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
@@ -305,9 +287,6 @@ namespace FineArts.Migrations
                     b.Property<decimal>("SoldPrice")
                         .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
-
-                    b.Property<bool>("SoldStatus")
-                        .HasColumnType("bit");
 
                     b.HasKey("ExhibitionPaintingId");
 
@@ -338,22 +317,6 @@ namespace FineArts.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PaintingTitle")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Poem")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Quotation")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Story")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

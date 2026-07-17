@@ -17,7 +17,7 @@ namespace FineArts.Controllers
         // GET: Competition
         public async Task<IActionResult> Index()
         {
-            var competitions = await _context.Competition
+            var competitions = await _context.competitions
                 .Include(c => c.Staff)
                 .ToListAsync();
 
@@ -30,7 +30,7 @@ namespace FineArts.Controllers
             if (id == null)
                 return NotFound();
 
-            var competition = await _context.Competition
+            var competition = await _context.competitions
                 .Include(c => c.Staff)
                 .FirstOrDefaultAsync(c => c.CompetitionId == id);
 
@@ -67,7 +67,7 @@ namespace FineArts.Controllers
             if (id == null)
                 return NotFound();
 
-            var competition = await _context.Competition.FindAsync(id);
+            var competition = await _context.competitions.FindAsync(id);
 
             if (competition == null)
                 return NotFound();
@@ -110,7 +110,7 @@ namespace FineArts.Controllers
             if (id == null)
                 return NotFound();
 
-            var competition = await _context.Competition
+            var competition = await _context.competitions
                 .Include(c => c.Staff)
                 .FirstOrDefaultAsync(c => c.CompetitionId == id);
 
@@ -125,11 +125,11 @@ namespace FineArts.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var competition = await _context.Competition.FindAsync(id);
+            var competition = await _context.competitions.FindAsync(id);
 
             if (competition != null)
             {
-                _context.Competition.Remove(competition);
+                _context.competitions.Remove(competition);
                 await _context.SaveChangesAsync();
             }
 
@@ -138,7 +138,7 @@ namespace FineArts.Controllers
 
         private bool CompetitionExists(int id)
         {
-            return _context.Competition.Any(e => e.CompetitionId == id);
+            return _context.competitions.Any(e => e.CompetitionId == id);
         }
     }
 }

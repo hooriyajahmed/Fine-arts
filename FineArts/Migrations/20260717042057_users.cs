@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace FineArts.Migrations
 {
     /// <inheritdoc />
-    public partial class user : Migration
+    public partial class users : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

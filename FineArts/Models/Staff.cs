@@ -1,10 +1,12 @@
 
 ﻿using FineArts.Areas.Identity.Data;
+using System.ComponentModel.DataAnnotations;
 
 namespace FineArts.Models
 {
     public class Staff
     {
+        [Key]
         public int StaffId { get; set; }
 
         public string? UserId { get; set; }
@@ -29,8 +31,6 @@ namespace FineArts.Models
 
         public string Remarks { get; set; }
 
-        //public ICollection<Competition> Competitions { get; set; }
-
-        //public ICollection<Evaluation> Evaluations { get; set; }
+        
     }
 }

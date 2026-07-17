@@ -6,41 +6,41 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace FineArts.Migrations
 {
     /// <inheritdoc />
-    public partial class staffs : Migration
+    public partial class student : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "staffs",
+                name: "students",
                 columns: table => new
                 {
-                    StaffId = table.Column<int>(type: "int", nullable: false)
+                    StudentId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Gender = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DOB = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    JoiningDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Subject = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ClassHandling = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Remarks = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AdmissionDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Course = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_staffs", x => x.StaffId);
+                    table.PrimaryKey("PK_students", x => x.StudentId);
                     table.ForeignKey(
-                        name: "FK_staffs_AspNetUsers_UserId",
+                        name: "FK_students_AspNetUsers_UserId",
                         column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_staffs_UserId",
-                table: "staffs",
+                name: "IX_students_UserId",
+                table: "students",
                 column: "UserId");
         }
 
@@ -48,7 +48,7 @@ namespace FineArts.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "staffs");
+                name: "students");
         }
     }
 }
