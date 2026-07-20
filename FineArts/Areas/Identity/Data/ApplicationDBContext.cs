@@ -23,7 +23,7 @@ public class ApplicationDBContext : IdentityDbContext<user>
     public DbSet<Staff> staffs { get; set; }
     public DbSet<Award> awards { get; set; }
 
-
+    public DbSet<StaffRequest> staffRequests { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder builder)

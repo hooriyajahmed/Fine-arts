@@ -1,5 +1,141 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model FineArts.Models.StaffRequest
+
 @{
+    ViewData["Title"] = "Staff Registration";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+
+            <div class="card shadow-lg border-0 rounded-4">
+
+                <div class="card-header bg-success text-white text-center py-3">
+                    <h3 class="mb-0">
+                        <i class="bi bi-person-workspace"></i>
+                        Staff Registration
+                    </h3>
+                </div>
+
+                <div class="card-body p-4">
+
+                    <form asp-action="Create" method="post">
+
+                        <div asp-validation-summary="All" class="alert alert-danger"></div>
+
+                        <div class="row">
+
+                            <!-- First Name -->
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="FirstName" class="form-label fw-semibold"></label>
+                                <input asp-for="FirstName" class="form-control" placeholder="Enter First Name" />
+                                <span asp-validation-for="FirstName" class="text-danger"></span>
+                            </div>
+
+                            <!-- Last Name -->
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="LastName" class="form-label fw-semibold"></label>
+                                <input asp-for="LastName" class="form-control" placeholder="Enter Last Name" />
+                                <span asp-validation-for="LastName" class="text-danger"></span>
+                            </div>
+
+                            <!-- Gender -->
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Gender" class="form-label fw-semibold"></label>
+                                <select asp-for="Gender" class="form-select">
+                                    <option value="">Select Gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                                <span asp-validation-for="Gender" class="text-danger"></span>
+                            </div>
+
+                           
+
+                            <!-- Phone -->
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Phone" class="form-label fw-semibold"></label>
+                                <input asp-for="Phone" class="form-control" placeholder="+92 300 1234567" />
+                                <span asp-validation-for="Phone" class="text-danger"></span>
+                            </div>
+
+                            <!-- Joining Date -->
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="JoiningDate" class="form-label fw-semibold"></label>
+                                <input asp-for="JoiningDate" type="date" class="form-control" />
+                                <span asp-validation-for="JoiningDate" class="text-danger"></span>
+                            </div>
+
+                            <!-- Subject -->
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Subject" class="form-label fw-semibold"></label>
+                                <select asp-for="Subject" class="form-select">
+                                    <option value="">Select Subject</option>
+                                    <option>Painting</option>
+                                    <option>Drawing</option>
+                                    <option>Graphic Design</option>
+                                    <option>Photography</option>
+                                    <option>Calligraphy</option>
+                                    <option>Sculpture</option>
+                                    <option>Art History</option>
+                                </select>
+                                <span asp-validation-for="Subject" class="text-danger"></span>
+                            </div>
+
+                            <!-- Class Handling -->
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="ClassHandling" class="form-label fw-semibold"></label>
+                                <select asp-for="ClassHandling" class="form-select">
+                                    <option value="">Select Class</option>
+                                    <option>Beginner</option>
+                                    <option>Intermediate</option>
+                                    <option>Advanced</option>
+                                    <option>Diploma</option>
+                                </select>
+                                <span asp-validation-for="ClassHandling" class="text-danger"></span>
+                            </div>
+
+                            <!-- Role -->
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label fw-semibold">Role</label>
+                                <input type="text" class="form-control" value="Staff" readonly />
+                            </div>
+
+                            <!-- Remarks -->
+                            <div class="col-12 mb-3">
+                                <label asp-for="Remarks" class="form-label fw-semibold"></label>
+                                <textarea asp-for="Remarks" rows="4" class="form-control" placeholder="Write remarks here..."></textarea>
+                                <span asp-validation-for="Remarks" class="text-danger"></span>
+                            </div>
+
+                        </div>
+
+                        <div class="text-center mt-4">
+
+                            <button type="submit" class="btn btn-success px-5">
+                                <i class="bi bi-check-circle-fill"></i>
+                                Register Staff
+                            </button>
+
+                            <a asp-action="Index" class="btn btn-outline-secondary px-5 ms-2">
+                                Cancel
+                            </a>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
