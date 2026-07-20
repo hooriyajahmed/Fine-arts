@@ -58,7 +58,115 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
 [F:/sem3 project/Fine-arts/FineArts/Views/Home/Index.cshtml]
+=======
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Award/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXdhcmRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Award/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXdhcmRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Award/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXdhcmRcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Award/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXdhcmRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Award/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXdhcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Competition/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGV0aXRpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Customer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Customer/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Customer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Customer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Customer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Evaluation/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZhbHVhdGlvblxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Evaluation/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZhbHVhdGlvblxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Evaluation/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZhbHVhdGlvblxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Evaluation/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZhbHVhdGlvblxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Evaluation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZhbHVhdGlvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/ExhibitionPainting/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhoaWJpdGlvblBhaW50aW5nXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/ExhibitionPainting/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhoaWJpdGlvblBhaW50aW5nXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/ExhibitionPainting/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhoaWJpdGlvblBhaW50aW5nXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/ExhibitionPainting/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhoaWJpdGlvblBhaW50aW5nXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/ExhibitionPainting/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhoaWJpdGlvblBhaW50aW5nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Exhibition/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhoaWJpdGlvblxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Exhibition/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhoaWJpdGlvblxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Exhibition/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhoaWJpdGlvblxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Exhibition/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhoaWJpdGlvblxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Exhibition/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhoaWJpdGlvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Home/Index.cshtml]
+>>>>>>> 43388e83990f6cf9c0e5a161f875ce77278ef0eb
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -66,7 +174,51 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
 [F:/sem3 project/Fine-arts/FineArts/Views/Shared/Error.cshtml]
+=======
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/PaintingSale/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpbnRpbmdTYWxlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/PaintingSale/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpbnRpbmdTYWxlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/PaintingSale/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpbnRpbmdTYWxlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/PaintingSale/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpbnRpbmdTYWxlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/PaintingSale/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpbnRpbmdTYWxlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Painting/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpbnRpbmdcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Painting/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpbnRpbmdcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Painting/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpbnRpbmdcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Painting/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpbnRpbmdcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Painting/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpbnRpbmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Shared/Error.cshtml]
+>>>>>>> 43388e83990f6cf9c0e5a161f875ce77278ef0eb
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -78,7 +230,83 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
 [F:/sem3 project/Fine-arts/FineArts/Views/_ViewImports.cshtml]
+=======
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Staff/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Staff/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Staff/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Staff/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Staff/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Student/Awards.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxBd2FyZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Student/Competitions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxDb21wZXRpdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Student/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Student/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Student/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Student/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Student/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Student/Exhibitions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxFeGhpYml0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Student/Feedback.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxGZWVkYmFjay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Student/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Student/MyPaintings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxNeVBhaW50aW5ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Student/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/Student/Settings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxTZXR0aW5ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Downloads/Fine-arts/FineArts/Views/_ViewImports.cshtml]
+>>>>>>> 43388e83990f6cf9c0e5a161f875ce77278ef0eb
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 

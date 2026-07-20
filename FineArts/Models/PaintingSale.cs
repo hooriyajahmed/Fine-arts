@@ -1,7 +1,10 @@
-﻿namespace FineArts.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace FineArts.Models
 {
     public class PaintingSale
     {
+        [Key]
         public int PaintingSaleId { get; set; }
 
         public int ExhibitionPaintingId { get; set; }

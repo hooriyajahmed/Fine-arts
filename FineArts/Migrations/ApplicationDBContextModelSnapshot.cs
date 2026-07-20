@@ -145,9 +145,6 @@ namespace FineArts.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("CreatedBy")
-                        .HasColumnType("int");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -158,14 +155,21 @@ namespace FineArts.Migrations
                     b.Property<int>("StaffId")
                         .HasColumnType("int");
 
+                    b.Property<int>("Staff_Id")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("imageurl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CompetitionId");
 
                     b.HasIndex("StaffId");
 
-                    b.ToTable("compettions");
+                    b.ToTable("competitions");
                 });
 
             modelBuilder.Entity("FineArts.Models.Customer", b =>
@@ -208,22 +212,10 @@ namespace FineArts.Migrations
                     b.Property<DateTime>("EvaluationDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ImprovementRemarks")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("MarksCategory")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NegativeRemarks")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("PaintingId")
                         .HasColumnType("int");
 
-                    b.Property<string>("PositiveRemarks")
+                    b.Property<string>("Remark")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -285,9 +277,6 @@ namespace FineArts.Migrations
                     b.Property<int>("PaintingId")
                         .HasColumnType("int");
 
-                    b.Property<bool>("PaymentGiven")
-                        .HasColumnType("bit");
-
                     b.Property<decimal>("QuotedPrice")
                         .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
@@ -295,9 +284,6 @@ namespace FineArts.Migrations
                     b.Property<decimal>("SoldPrice")
                         .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
-
-                    b.Property<bool>("SoldStatus")
-                        .HasColumnType("bit");
 
                     b.HasKey("ExhibitionPaintingId");
 
@@ -328,22 +314,6 @@ namespace FineArts.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PaintingTitle")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Poem")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Quotation")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Story")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

@@ -1,0 +1,237 @@
+﻿@{
+    ViewData["Title"] = "Competitions";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+
+    <!-- Page Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="section-title">Art Competitions</h1>
+            <p class="text-muted">
+                Participate in creative challenges and showcase your talent.
+            </p>
+        </div>
+
+        <button class="btn btn-primary btn-lg">
+            <i class="bi bi-palette-fill"></i> Participate Now
+        </button>
+    </div>
+
+    <!-- Featured Competition -->
+    <div class="dashboard-card mb-5 p-0 overflow-hidden">
+
+        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1400"
+             class="img-fluid w-100"
+             style="height:350px;object-fit:cover;">
+
+        <div class="p-4">
+
+            <span class="badge bg-success mb-3">Ongoing Competition</span>
+
+            <h2 class="mb-3">Nature & Creativity Contest 2026</h2>
+
+            <p class="text-muted">
+                Create an original artwork inspired by nature, wildlife, or environmental
+                conservation. Express your creativity through painting, digital art,
+                or mixed media.
+            </p>
+
+            <div class="row mt-4">
+
+                <div class="col-md-3">
+                    <h6>Theme</h6>
+                    <p>Nature & Environment</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h6>Deadline</h6>
+                    <p>25 July 2026</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h6>Prize</h6>
+                    <p>Gold Medal + Rs.20,000</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h6>Status</h6>
+                    <span class="badge bg-success">Open</span>
+                </div>
+
+            </div>
+
+            <button class="btn btn-primary mt-3">
+                View Details
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Upcoming Competitions -->
+    <h2 class="section-title mb-4">Upcoming Competitions</h2>
+
+    <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-lg-4">
+
+            <div class="dashboard-card h-100">
+
+                <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800"
+                     class="img-fluid rounded mb-3">
+
+                <span class="badge bg-warning text-dark mb-2">
+                    Coming Soon
+                </span>
+
+                <h4>Portrait Art Challenge</h4>
+
+                <p class="text-muted">
+                    Showcase your portrait painting skills and creativity.
+                </p>
+
+                <hr>
+
+                <p><strong>Start:</strong> 5 Aug 2026</p>
+
+                <p><strong>Prize:</strong> Rs.15,000</p>
+
+                <button class="btn btn-outline-dark w-100">
+                    View Competition
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4">
+
+            <div class="dashboard-card h-100">
+
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800"
+                     class="img-fluid rounded mb-3">
+
+                <span class="badge bg-warning text-dark mb-2">
+                    Coming Soon
+                </span>
+
+                <h4>Digital Illustration Contest</h4>
+
+                <p class="text-muted">
+                    Design a modern digital artwork using your imagination.
+                </p>
+
+                <hr>
+
+                <p><strong>Start:</strong> 20 Aug 2026</p>
+
+                <p><strong>Prize:</strong> Rs.25,000</p>
+
+                <button class="btn btn-outline-dark w-100">
+                    View Competition
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4">
+
+            <div class="dashboard-card h-100">
+
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
+                     class="img-fluid rounded mb-3">
+
+                <span class="badge bg-warning text-dark mb-2">
+                    Coming Soon
+                </span>
+
+                <h4>Landscape Painting</h4>
+
+                <p class="text-muted">
+                    Paint beautiful landscapes using traditional or digital media.
+                </p>
+
+                <hr>
+
+                <p><strong>Start:</strong> 15 Sept 2026</p>
+
+                <p><strong>Prize:</strong> Rs.18,000</p>
+
+                <button class="btn btn-outline-dark w-100">
+                    View Competition
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Rules -->
+    <div class="dashboard-card mt-5">
+
+        <h3 class="mb-4">
+            Competition Rules
+        </h3>
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item">
+                        ✅ Only original artwork is accepted.
+                    </li>
+
+                    <li class="list-group-item">
+                        ✅ Upload before the deadline.
+                    </li>
+
+                    <li class="list-group-item">
+                        ✅ JPG or PNG format only.
+                    </li>
+
+                    <li class="list-group-item">
+                        ✅ Maximum file size: 10 MB.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item">
+                        ⭐ Include a title and description.
+                    </li>
+
+                    <li class="list-group-item">
+                        ⭐ AI-generated artwork is not allowed.
+                    </li>
+
+                    <li class="list-group-item">
+                        ⭐ One submission per student.
+                    </li>
+
+                    <li class="list-group-item">
+                        ⭐ Late submissions are rejected.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,7 +1,10 @@
-﻿namespace FineArts.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace FineArts.Models
 {
     public class Award
     {
+        [Key]
         public int AwardId { get; set; }
 
         public int CompetitionId { get; set; }
@@ -19,5 +22,6 @@
         public Competition Competition { get; set; }
 
         public Student Student { get; set; }
+
     }
 }

@@ -1,0 +1,496 @@
+﻿@{
+    ViewData["Title"] = "Student Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+
+    <!-- Welcome -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <div>
+            <h1 class="section-title">Welcome Back 👋</h1>
+            <p class="text-muted">
+                Keep creating masterpieces and participate in upcoming competitions.
+            </p>
+        </div>
+
+        <a asp-controller="Painting"
+           asp-action="Upload"
+           class="btn btn-primary btn-lg">
+
+            <i class="bi bi-cloud-upload"></i>
+            Upload Painting
+
+        </a>
+
+    </div>
+
+
+    <!-- Statistics -->
+
+    <div class="row g-4 mb-5">
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="dashboard-card">
+
+                <div class="d-flex justify-content-between">
+
+                    <div>
+
+                        <h5>Total Paintings</h5>
+
+                        <h2>18</h2>
+
+                    </div>
+
+                    <div class="icon">
+
+                        <i class="bi bi-image-fill"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="dashboard-card">
+
+                <div class="d-flex justify-content-between">
+
+                    <div>
+
+                        <h5>Competitions</h5>
+
+                        <h2>5</h2>
+
+                    </div>
+
+                    <div class="icon">
+
+                        <i class="bi bi-trophy-fill"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="dashboard-card">
+
+                <div class="d-flex justify-content-between">
+
+                    <div>
+
+                        <h5>Awards Won</h5>
+
+                        <h2>3</h2>
+
+                    </div>
+
+                    <div class="icon">
+
+                        <i class="bi bi-award-fill"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="dashboard-card">
+
+                <div class="d-flex justify-content-between">
+
+                    <div>
+
+                        <h5>Exhibitions</h5>
+
+                        <h2>2</h2>
+
+                    </div>
+
+                    <div class="icon">
+
+                        <i class="bi bi-palette-fill"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Competition + Announcement -->
+
+    <div class="row g-4 mb-5">
+
+        <div class="col-lg-8">
+
+            <div class="dashboard-card">
+
+                <h3 class="mb-4">
+                    Current Competition
+                </h3>
+
+                <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=1200"
+                     class="img-fluid rounded mb-4" />
+
+                <h4>Nature & Creativity Contest</h4>
+
+                <p class="text-muted">
+
+                    Theme:
+                    Nature and Environment
+
+                </p>
+
+                <div class="row">
+
+                    <div class="col-md-4">
+
+                        <strong>Start</strong>
+
+                        <p>10 July 2026</p>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <strong>Deadline</strong>
+
+                        <p>25 July 2026</p>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <strong>Prize</strong>
+
+                        <p>Gold Medal + Rs.20,000</p>
+
+                    </div>
+
+                </div>
+
+                <a href="#"
+                   class="btn btn-primary">
+
+                    View Details
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-lg-4">
+
+            <div class="dashboard-card">
+
+                <h3 class="mb-4">
+
+                    Announcements
+
+                </h3>
+
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item">
+
+                        🎨 New Competition starts tomorrow.
+
+                    </li>
+
+                    <li class="list-group-item">
+
+                        🏆 Winners announced Friday.
+
+                    </li>
+
+                    <li class="list-group-item">
+
+                        🖼 Exhibition registrations open.
+
+                    </li>
+
+                    <li class="list-group-item">
+
+                        📢 Submit before deadline.
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Recent Paintings -->
+
+    <div class="dashboard-card mb-5">
+
+        <div class="d-flex justify-content-between mb-4">
+
+            <h3>My Recent Paintings</h3>
+
+            <a href="#">View All</a>
+
+        </div>
+
+        <table class="table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Painting</th>
+
+                    <th>Competition</th>
+
+                    <th>Date</th>
+
+                    <th>Status</th>
+
+                    <th>Marks</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Sunset Glory</td>
+
+                    <td>Nature</td>
+
+                    <td>12 Jul</td>
+
+                    <td>
+
+                        <span class="badge bg-success">
+
+                            Reviewed
+
+                        </span>
+
+                    </td>
+
+                    <td>Best</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Peace</td>
+
+                    <td>Humanity</td>
+
+                    <td>06 Jul</td>
+
+                    <td>
+
+                        <span class="badge bg-warning">
+
+                            Pending
+
+                        </span>
+
+                    </td>
+
+                    <td>-</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Forest</td>
+
+                    <td>Nature</td>
+
+                    <td>10 Jul</td>
+
+                    <td>
+
+                        <span class="badge bg-primary">
+
+                            Exhibition
+
+                        </span>
+
+                    </td>
+
+                    <td>Better</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+
+    <!-- Feedback & Awards -->
+
+    <div class="row g-4">
+
+        <div class="col-lg-6">
+
+            <div class="dashboard-card">
+
+                <h3 class="mb-4">
+
+                    Staff Feedback
+
+                </h3>
+
+                <div class="mb-3">
+
+                    <strong>Sunset Glory</strong>
+
+                    <span class="badge bg-success">
+
+                        Best
+
+                    </span>
+
+                    <p class="mt-2">
+
+                        Excellent creativity.
+                        Improve shadows slightly.
+
+                    </p>
+
+                </div>
+
+                <hr>
+
+                <div>
+
+                    <strong>Peace</strong>
+
+                    <span class="badge bg-warning">
+
+                        Good
+
+                    </span>
+
+                    <p class="mt-2">
+
+                        Nice concept.
+                        Add more background details.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="col-lg-6">
+
+            <div class="dashboard-card">
+
+                <h3 class="mb-4">
+
+                    Awards
+
+                </h3>
+
+                <table class="table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Competition</th>
+
+                            <th>Award</th>
+
+                            <th>Date</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Nature Contest</td>
+
+                            <td>
+
+                                🥇 First Position
+
+                            </td>
+
+                            <td>
+
+                                18 Jul
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Portrait</td>
+
+                            <td>
+
+                                ⭐ Creativity
+
+                            </td>
+
+                            <td>
+
+                                12 Jun
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

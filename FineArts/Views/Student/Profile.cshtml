@@ -1,0 +1,193 @@
+﻿@{
+    ViewData["Title"] = "My Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-5">
+
+        <div>
+            <h1 class="section-title">My Profile</h1>
+            <p class="text-muted">
+                View your personal information and artistic journey.
+            </p>
+        </div>
+
+        <button class="btn btn-primary">
+            <i class="bi bi-pencil-square"></i>
+            Edit Profile
+        </button>
+
+    </div>
+
+    <div class="row g-4">
+
+        <!-- Left Profile Card -->
+
+        <div class="col-lg-4">
+
+            <div class="dashboard-card text-center">
+
+                <img src="https://i.pravatar.cc/200"
+                     class="rounded-circle shadow mb-4"
+                     width="170"
+                     height="170">
+
+                <h2>Sarah Ahmed</h2>
+
+                <p class="text-muted">
+                    Fine Arts Student
+                </p>
+
+                <hr>
+
+                <div class="row text-center">
+
+                    <div class="col-4">
+                        <h3>18</h3>
+                        <small>Paintings</small>
+                    </div>
+
+                    <div class="col-4">
+                        <h3>5</h3>
+                        <small>Awards</small>
+                    </div>
+
+                    <div class="col-4">
+                        <h3>6</h3>
+                        <small>Exhibitions</small>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <button class="btn btn-outline-primary w-100">
+                    View Portfolio
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Right Information -->
+
+        <div class="col-lg-8">
+
+            <div class="dashboard-card">
+
+                <h3 class="mb-4">
+                    Personal Information
+                </h3>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+
+                        <label class="fw-bold">
+                            Full Name
+                        </label>
+
+                        <p>Sarah Ahmed</p>
+
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+
+                        <label class="fw-bold">
+                            Student ID
+                        </label>
+
+                        <p>FA20260015</p>
+
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+
+                        <label class="fw-bold">
+                            Email
+                        </label>
+
+                        <p>sarah@gmail.com</p>
+
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+
+                        <label class="fw-bold">
+                            Phone
+                        </label>
+
+                        <p>03001234567</p>
+
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+
+                        <label class="fw-bold">
+                            Course
+                        </label>
+
+                        <p>Fine Arts</p>
+
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+
+                        <label class="fw-bold">
+                            Admission Year
+                        </label>
+
+                        <p>2026</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Skills -->
+
+            <div class="dashboard-card mt-4">
+
+                <h3 class="mb-4">
+                    Artistic Skills
+                </h3>
+
+                <p>Water Colour</p>
+
+                <div class="progress mb-4">
+                    <div class="progress-bar bg-success"
+                         style="width:90%"></div>
+                </div>
+
+                <p>Oil Painting</p>
+
+                <div class="progress mb-4">
+                    <div class="progress-bar bg-warning"
+                         style="width:80%"></div>
+                </div>
+
+                <p>Digital Art</p>
+
+                <div class="progress mb-4">
+                    <div class="progress-bar bg-primary"
+                         style="width:75%"></div>
+                </div>
+
+                <p>Sketching</p>
+
+                <div class="progress">
+                    <div class="progress-bar bg-danger"
+                         style="width:95%"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,266 @@
+﻿@{
+    ViewData["Title"] = "Exhibitions";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-5">
+
+        <div>
+            <h1 class="section-title">My Exhibitions</h1>
+            <p class="text-muted">
+                View paintings selected for exhibitions and track their sales.
+            </p>
+        </div>
+
+        <button class="btn btn-primary">
+            <i class="bi bi-easel-fill"></i>
+            View Upcoming Exhibitions
+        </button>
+
+    </div>
+
+    <!-- Statistics -->
+
+    <div class="row g-4 mb-5">
+
+        <div class="col-md-3">
+            <div class="dashboard-card text-center">
+                <i class="bi bi-easel-fill display-4 text-warning"></i>
+                <h2 class="mt-3">6</h2>
+                <p>Selected Paintings</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="dashboard-card text-center">
+                <i class="bi bi-cash-stack display-4 text-success"></i>
+                <h2 class="mt-3">Rs.95,000</h2>
+                <p>Total Sales</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="dashboard-card text-center">
+                <i class="bi bi-bag-check-fill display-4 text-primary"></i>
+                <h2 class="mt-3">4</h2>
+                <p>Sold Paintings</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="dashboard-card text-center">
+                <i class="bi bi-clock-history display-4 text-danger"></i>
+                <h2 class="mt-3">2</h2>
+                <p>On Display</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Exhibition Gallery -->
+
+    <div class="row g-4">
+
+        <!-- Painting 1 -->
+        <div class="col-lg-4">
+
+            <div class="dashboard-card">
+
+                <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=700"
+                     class="img-fluid rounded mb-3"
+                     style="height:260px;object-fit:cover;width:100%;">
+
+                <h4>Sunset Glory</h4>
+
+                <p class="text-muted">
+                    Karachi Art Exhibition
+                </p>
+
+                <hr>
+
+                <p><strong>Listed Price:</strong> Rs.20,000</p>
+
+                <p><strong>Sold Price:</strong> Rs.22,000</p>
+
+                <span class="badge bg-success">
+                    Sold
+                </span>
+
+                <span class="badge bg-primary">
+                    Payment Received
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- Painting 2 -->
+
+        <div class="col-lg-4">
+
+            <div class="dashboard-card">
+
+                <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=700"
+                     class="img-fluid rounded mb-3"
+                     style="height:260px;object-fit:cover;width:100%;">
+
+                <h4>Dream Forest</h4>
+
+                <p class="text-muted">
+                    National Fine Arts Expo
+                </p>
+
+                <hr>
+
+                <p><strong>Listed Price:</strong> Rs.18,000</p>
+
+                <p><strong>Status:</strong> On Display</p>
+
+                <span class="badge bg-warning text-dark">
+                    Available
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- Painting 3 -->
+
+        <div class="col-lg-4">
+
+            <div class="dashboard-card">
+
+                <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=700"
+                     class="img-fluid rounded mb-3"
+                     style="height:260px;object-fit:cover;width:100%;">
+
+                <h4>Ocean Waves</h4>
+
+                <p class="text-muted">
+                    Pakistan Art Festival
+                </p>
+
+                <hr>
+
+                <p><strong>Listed Price:</strong> Rs.25,000</p>
+
+                <p><strong>Sold Price:</strong> Rs.27,000</p>
+
+                <span class="badge bg-success">
+                    Sold
+                </span>
+
+                <span class="badge bg-primary">
+                    Payment Received
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Exhibition History -->
+
+    <div class="dashboard-card mt-5">
+
+        <h2 class="mb-4">Exhibition History</h2>
+
+        <div class="table-responsive">
+
+            <table class="table align-middle">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Painting</th>
+                        <th>Exhibition</th>
+                        <th>Price</th>
+                        <th>Status</th>
+                        <th>Payment</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Sunset Glory</td>
+
+                        <td>Karachi Art Exhibition</td>
+
+                        <td>Rs.22,000</td>
+
+                        <td>
+                            <span class="badge bg-success">
+                                Sold
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="badge bg-primary">
+                                Paid
+                            </span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Dream Forest</td>
+
+                        <td>National Fine Arts Expo</td>
+
+                        <td>Rs.18,000</td>
+
+                        <td>
+                            <span class="badge bg-warning text-dark">
+                                On Display
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="badge bg-secondary">
+                                Pending
+                            </span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Ocean Waves</td>
+
+                        <td>Pakistan Art Festival</td>
+
+                        <td>Rs.27,000</td>
+
+                        <td>
+                            <span class="badge bg-success">
+                                Sold
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="badge bg-primary">
+                                Paid
+                            </span>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
