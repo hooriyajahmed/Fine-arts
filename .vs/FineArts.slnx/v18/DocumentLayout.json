@@ -1,25 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USER\\Downloads\\Fine-arts\\",
+  "WorkspaceRootPath": "F:\\sem3 project\\Fine-arts\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Migrations\\20260712201718_awards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FineArts\\Migrations\\20260712201718_awards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|c:\\users\\user\\downloads\\fine-arts\\finearts\\areas\\identity\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|f:\\sem3 project\\fine-arts\\finearts\\areas\\identity\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|solutionrelative:finearts\\areas\\identity\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Migrations\\20260712201609_awards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FineArts\\Migrations\\20260712201609_awards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Migrations\\20260712201609_awards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|c:\\users\\user\\downloads\\fine-arts\\finearts\\models\\award.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|f:\\sem3 project\\fine-arts\\finearts\\models\\award.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|solutionrelative:finearts\\models\\award.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|c:\\users\\user\\downloads\\fine-arts\\finearts\\models\\exhibitionpainting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|f:\\sem3 project\\fine-arts\\finearts\\models\\exhibitionpainting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|solutionrelative:finearts\\models\\exhibitionpainting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,60 +25,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20260712201718_awards.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Migrations\\20260712201718_awards.cs",
-              "RelativeDocumentMoniker": "FineArts\\Migrations\\20260712201718_awards.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Migrations\\20260712201718_awards.cs",
-              "RelativeToolTip": "FineArts\\Migrations\\20260712201718_awards.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T20:17:18.628Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20260712201609_awards.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Migrations\\20260712201609_awards.cs",
-              "RelativeDocumentMoniker": "FineArts\\Migrations\\20260712201609_awards.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Migrations\\20260712201609_awards.cs",
-              "RelativeToolTip": "FineArts\\Migrations\\20260712201609_awards.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T20:16:09.81Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Award.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Models\\Award.cs",
-              "RelativeDocumentMoniker": "FineArts\\Models\\Award.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Models\\Award.cs",
-              "RelativeToolTip": "FineArts\\Models\\Award.cs",
-              "ViewState": "AgIAAAUAAACA+/////8PwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T20:15:36.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ExhibitionPainting.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Models\\ExhibitionPainting.cs",
-              "RelativeDocumentMoniker": "FineArts\\Models\\ExhibitionPainting.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Models\\ExhibitionPainting.cs",
-              "RelativeToolTip": "FineArts\\Models\\ExhibitionPainting.cs",
-              "ViewState": "AgIAAAEAAABA/P/////vvxAAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T20:05:50.482Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -99,10 +42,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "20260712201609_awards.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Migrations\\20260712201609_awards.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Migrations\\20260712201609_awards.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T20:16:09.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Award.cs",
+              "DocumentMoniker": "F:\\sem3 project\\Fine-arts\\FineArts\\Models\\Award.cs",
+              "RelativeDocumentMoniker": "FineArts\\Models\\Award.cs",
+              "ToolTip": "F:\\sem3 project\\Fine-arts\\FineArts\\Models\\Award.cs",
+              "RelativeToolTip": "FineArts\\Models\\Award.cs",
+              "ViewState": "AgIAAAUAAACA+/////8PwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T20:15:36.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExhibitionPainting.cs",
+              "DocumentMoniker": "F:\\sem3 project\\Fine-arts\\FineArts\\Models\\ExhibitionPainting.cs",
+              "RelativeDocumentMoniker": "FineArts\\Models\\ExhibitionPainting.cs",
+              "ToolTip": "F:\\sem3 project\\Fine-arts\\FineArts\\Models\\ExhibitionPainting.cs",
+              "RelativeToolTip": "FineArts\\Models\\ExhibitionPainting.cs",
+              "ViewState": "AgIAAAEAAABA/P/////vvxAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T20:05:50.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ApplicationDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Areas\\Identity\\Data\\ApplicationDBContext.cs",
+              "DocumentMoniker": "F:\\sem3 project\\Fine-arts\\FineArts\\Areas\\Identity\\Data\\ApplicationDBContext.cs",
               "RelativeDocumentMoniker": "FineArts\\Areas\\Identity\\Data\\ApplicationDBContext.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Areas\\Identity\\Data\\ApplicationDBContext.cs",
+              "ToolTip": "F:\\sem3 project\\Fine-arts\\FineArts\\Areas\\Identity\\Data\\ApplicationDBContext.cs",
               "RelativeToolTip": "FineArts\\Areas\\Identity\\Data\\ApplicationDBContext.cs",
               "ViewState": "AgIAACkAAAAg/v///38twD4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
