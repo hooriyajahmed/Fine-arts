@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net8.0": {
       "Azure.Core/1.38.0": {
@@ -7758,23 +7758,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {},
+    "C:\\Users\\Hooriya\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\FineArts.csproj",
+      "projectUniqueName": "D:\\Semester pro\\Fine-arts\\FineArts\\FineArts.csproj",
       "projectName": "FineArts",
-      "projectPath": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\FineArts.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\obj\\",
+      "projectPath": "D:\\Semester pro\\Fine-arts\\FineArts\\FineArts.csproj",
+      "packagesPath": "C:\\Users\\Hooriya\\.nuget\\packages\\",
+      "outputPath": "D:\\Semester pro\\Fine-arts\\FineArts\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hooriya\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7788,6 +7788,7 @@
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {}
         }
@@ -7802,10 +7803,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net8.0": {
+        "framework": "net8.0",
         "targetAlias": "net8.0",
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
@@ -7845,19 +7847,19 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.24, 8.0.24]"
+            "version": "[8.0.28, 8.0.28]"
           },
           {
             "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.24, 8.0.24]"
+            "version": "[8.0.28, 8.0.28]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.24, 8.0.24]"
+            "version": "[8.0.28, 8.0.28]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.24, 8.0.24]"
+            "version": "[8.0.28, 8.0.28]"
           }
         ],
         "frameworkReferences": {
@@ -7868,16 +7870,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
-    }
-  ]
+  }
 }

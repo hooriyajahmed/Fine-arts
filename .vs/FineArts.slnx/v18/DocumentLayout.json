@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USER\\Downloads\\Fine-arts\\",
+  "WorkspaceRootPath": "D:\\Semester pro\\Fine-arts\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Views\\Competition\\Create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FineArts\\Views\\Competition\\Create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|d:\\semester pro\\fine-arts\\finearts\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|solutionrelative:finearts\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|c:\\users\\user\\downloads\\fine-arts\\finearts\\models\\competitionimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|solutionrelative:finearts\\models\\competitionimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|d:\\semester pro\\fine-arts\\finearts\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|solutionrelative:finearts\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|c:\\users\\user\\downloads\\fine-arts\\finearts\\controllers\\competitioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|solutionrelative:finearts\\controllers\\competitioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|d:\\semester pro\\fine-arts\\finearts\\views\\shared\\_dashoardlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|solutionrelative:finearts\\views\\shared\\_dashoardlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|d:\\semester pro\\fine-arts\\finearts\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|solutionrelative:finearts\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +26,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -38,42 +50,54 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_DashoardLayout.cshtml",
+              "DocumentMoniker": "D:\\Semester pro\\Fine-arts\\FineArts\\Views\\Shared\\_DashoardLayout.cshtml",
+              "RelativeDocumentMoniker": "FineArts\\Views\\Shared\\_DashoardLayout.cshtml",
+              "ToolTip": "D:\\Semester pro\\Fine-arts\\FineArts\\Views\\Shared\\_DashoardLayout.cshtml",
+              "RelativeToolTip": "FineArts\\Views\\Shared\\_DashoardLayout.cshtml",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAkwNAAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-20T08:31:03.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "competitionimage.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Models\\competitionimage.cs",
-              "RelativeDocumentMoniker": "FineArts\\Models\\competitionimage.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Models\\competitionimage.cs",
-              "RelativeToolTip": "FineArts\\Models\\competitionimage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-17T05:05:27.335Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Semester pro\\Fine-arts\\FineArts\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FineArts\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Semester pro\\Fine-arts\\FineArts\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FineArts\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-20T08:22:16.778Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Views\\Competition\\Create.cshtml",
-              "RelativeDocumentMoniker": "FineArts\\Views\\Competition\\Create.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Views\\Competition\\Create.cshtml",
-              "RelativeToolTip": "FineArts\\Views\\Competition\\Create.cshtml",
-              "ViewState": "AgIAAAMAAAAwY2ZmZuYcwAwAAAA+AAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Semester pro\\Fine-arts\\FineArts\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "FineArts\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "D:\\Semester pro\\Fine-arts\\FineArts\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "FineArts\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJUGAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-17T05:03:38.139Z",
+              "WhenOpened": "2026-07-20T06:55:23.772Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CompetitionController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Controllers\\CompetitionController.cs",
-              "RelativeDocumentMoniker": "FineArts\\Controllers\\CompetitionController.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Controllers\\CompetitionController.cs",
-              "RelativeToolTip": "FineArts\\Controllers\\CompetitionController.cs",
-              "ViewState": "AgIAACEAAAAAoP//////vysAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Semester pro\\Fine-arts\\FineArts\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "FineArts\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Semester pro\\Fine-arts\\FineArts\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "FineArts\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-17T04:59:38.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-20T06:54:57.362Z"
             }
           ]
         }
