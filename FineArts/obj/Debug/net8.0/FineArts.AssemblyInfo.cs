@@ -15,7 +15,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FineArts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+337e62b96c93890d9223e510e34f9a0579c6ed56")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8a12225183c86cec481c07ee007e30a47d0e01b")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("FineArts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FineArts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

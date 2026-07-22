@@ -1,5 +1,116 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model FineArts.Models.Staff
+
 @{
+    ViewData["Title"] = "Add Staff";
+}
+<div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+
+    <div class="card-header border-0 text-white py-3"
+         style="background:linear-gradient(135deg,#4f46e5,#7c3aed);">
+
+        <div class="d-flex align-items-center">
+            <div class="bg-white text-primary rounded-circle d-flex align-items-center justify-content-center me-3"
+                 style="width:55px;height:55px;">
+                <i class="cil-user-follow fs-3"></i>
+            </div>
+
+            <div>
+                <h3 class="mb-0 fw-bold">Add New Staff</h3>
+                <small>Create a new staff profile for Fine Arts Academy</small>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card-body p-4">
+
+            <form asp-action="Create">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="FirstName" class="form-label"></label>
+                        <input asp-for="FirstName" class="form-control" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="LastName" class="form-label"></label>
+                        <input asp-for="LastName" class="form-control" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Gender" class="form-label"></label>
+                        <select asp-for="Gender" class="form-select">
+                            <option value="">Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                        <span asp-validation-for="Gender" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Email" class="form-label"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Phone" class="form-label"></label>
+                        <input asp-for="Phone" class="form-control" />
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="JoiningDate" class="form-label"></label>
+                        <input asp-for="JoiningDate" type="date" class="form-control" />
+                        <span asp-validation-for="JoiningDate" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Subject" class="form-label"></label>
+                        <input asp-for="Subject" class="form-control" />
+                        <span asp-validation-for="Subject" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="ClassHandling" class="form-label"></label>
+                        <input asp-for="ClassHandling" class="form-control" />
+                        <span asp-validation-for="ClassHandling" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Remarks" class="form-label"></label>
+                        <textarea asp-for="Remarks" class="form-control" rows="3"
+                                  placeholder="Enter any additional remarks about the staff..."></textarea>
+                        <span asp-validation-for="Remarks" class="text-danger"></span>
+                    </div>
+
+                </div>
+
+                <hr />
+
+                <button type="submit" class="btn btn-primary">
+                    <i class="cil-save"></i> Save Staff
+                </button>
+
+                <a asp-action="Index" class="btn btn-secondary">
+                    <i class="cil-arrow-left"></i> Back
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

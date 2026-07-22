@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 C:\Users\USER\Downloads\Fine-arts\FineArts\obj\Debug\net8.0\FineArts.csproj.AssemblyReference.cache
 C:\Users\USER\Downloads\Fine-arts\FineArts\obj\Debug\net8.0\rpswa.dswa.cache.json
 C:\Users\USER\Downloads\Fine-arts\FineArts\obj\Debug\net8.0\FineArts.GeneratedMSBuildEditorConfig.editorconfig
@@ -262,6 +263,8 @@ C:\Users\USER\Downloads\Fine-arts\FineArts\obj\Debug\net8.0\refint\FineArts.dll
 C:\Users\USER\Downloads\Fine-arts\FineArts\obj\Debug\net8.0\FineArts.pdb
 C:\Users\USER\Downloads\Fine-arts\FineArts\obj\Debug\net8.0\FineArts.genruntimeconfig.cache
 C:\Users\USER\Downloads\Fine-arts\FineArts\obj\Debug\net8.0\ref\FineArts.dll
+=======
+>>>>>>> Stashed changes
 D:\Semester pro\Fine-arts\FineArts\bin\Debug\net8.0\appsettings.Development.json
 D:\Semester pro\Fine-arts\FineArts\bin\Debug\net8.0\appsettings.json
 D:\Semester pro\Fine-arts\FineArts\bin\Debug\net8.0\FineArts.staticwebassets.runtime.json

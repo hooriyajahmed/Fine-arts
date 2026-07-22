@@ -18,7 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
+<<<<<<< Updated upstream
     <Folder Include="Migrations\" />
+=======
+    <Folder Include="wwwroot\admin\" />
+>>>>>>> Stashed changes
   </ItemGroup>
 
 </Project>
