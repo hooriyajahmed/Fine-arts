@@ -61,68 +61,44 @@ namespace FineArts.Controllers
         {
             return View();
         }
+        // GET: Student
 
 
 
-        //// GET: Student
-        //public async Task<IActionResult> Index()
-        //{
-        //    var students = await _context.students
-        //        .Include(s => s.User)
-        //        .ToListAsync();
+        // GET: Student
+        public async Task<IActionResult> Index()
+        {
+            var students = await _context.students
+                .Include(s => s.User)
+                .ToListAsync();
 
-        //    return View(students);
-        //}
+            return View(students);
+        }
 
-        //// GET: Student/Details/5
-        //public async Task<IActionResult> Details(int? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return NotFound();
-        //    }
+        // GET: Student/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
 
-        //    var student = await _context.students
-        //        .Include(s => s.User)
-        //        .FirstOrDefaultAsync(m => m.StudentId == id);
+            var student = await _context.students
+                .Include(s => s.User)
+                .FirstOrDefaultAsync(m => m.StudentId == id);
 
-        //    if (student == null)
-        //    {
-        //        return NotFound();
-        //    }
+            if (student == null)
+            {
+                return NotFound();
+            }
 
-        //    return View(student);
-        //}
+            return View(student);
+        }
 
         // GET: Student/Create
 
-        public async Task<IActionResult> Create()
+        public IActionResult Create()
         {
-            var user = await _userManager.GetUserAsync(User);
-
-            if (user == null)
-            {
-                return Challenge();
-            }
-
-            // Already a Student?
-            bool isStudent = await _context.students.AnyAsync(s => s.UserId == user.Id);
-
-            if (isStudent)
-            {
-                TempData["Error"] = "You are already registered as a Student.";
-                return RedirectToAction("Index");
-            }
-
-            // Already a Staff?
-            bool isStaff = await _context.staffs.AnyAsync(s => s.UserId == user.Id);
-
-            if (isStaff)
-            {
-                TempData["Error"] = "You are already registered as Staff. You cannot become a Student.";
-                return RedirectToAction("Index");
-            }
-
             return View();
         }
 
@@ -131,50 +107,38 @@ namespace FineArts.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Student student)
         {
+
             if (!ModelState.IsValid)
             {
                 return View(student);
             }
 
-            // Get logged-in Identity user
+            // Get the logged-in Identity user
             var identityUser = await _userManager.GetUserAsync(User);
 
             if (identityUser == null)
             {
-                return Challenge();
+                return Challenge(); // User is not logged in
             }
 
-            // Check if already a Student
-            bool alreadyStudent = await _context.students
+            // Check if the user is already registered as a student
+            bool alreadyRegistered = await _context.students
                 .AnyAsync(s => s.UserId == identityUser.Id);
 
-            if (alreadyStudent)
+            if (alreadyRegistered)
             {
-                ModelState.AddModelError("", "You are already registered as a Student.");
+                ModelState.AddModelError("", "You are already registered as a student.");
                 return View(student);
             }
 
-            // Check if already a Staff
-            bool alreadyStaff = await _context.staffs
-                .AnyAsync(s => s.UserId == identityUser.Id);
-
-            if (alreadyStaff)
-            {
-                ModelState.AddModelError("", "You are already registered as a Staff member. A user cannot be both Student and Staff.");
-                return View(student);
-            }
-
-            // Link Student with Identity User
+            // Link the student record to the logged-in user
             student.UserId = identityUser.Id;
 
-            // Automatically use Identity Email
-            student.Email = identityUser.Email;
-
-            // Save Student
+            // Save the student
             _context.students.Add(student);
             await _context.SaveChangesAsync();
 
-            // Assign Student Role
+            // Assign the Student role
             if (!await _userManager.IsInRoleAsync(identityUser, "Student"))
             {
                 await _userManager.AddToRoleAsync(identityUser, "Student");
@@ -183,9 +147,18 @@ namespace FineArts.Controllers
             TempData["Success"] = "Student registration completed successfully.";
 
             return RedirectToAction("Index", "Home");
+
+            if (ModelState.IsValid)
+            {
+                _context.Add(student);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(student);
         }
     }
-    }
+}
 //        // GET: Student/Edit/5
 //        public async Task<IActionResult> Edit(int? id)
 //        {
