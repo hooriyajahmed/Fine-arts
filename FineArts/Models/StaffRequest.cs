@@ -14,31 +14,32 @@ namespace FineArts.Models
         public user? User { get; set; }
 
         [Required]
-        public string FirstName { get; set; }
+        public string FirstName { get; set; } = "";
 
         [Required]
-        public string LastName { get; set; }
+        public string LastName { get; set; } = "";
 
         [Required]
-        public string Gender { get; set; }
-
-        public string Email { get; set; }
+        public string Gender { get; set; } = "";
 
         [Required]
-        public string Phone { get; set; }
+        public string Email { get; set; } = "";
+
+        [Required]
+        public string Phone { get; set; } = "";
 
         public DateTime JoiningDate { get; set; }
 
         [Required]
-        public string Subject { get; set; }
+        public string Subject { get; set; } = "";
 
         [Required]
-        public string ClassHandling { get; set; }
+        public string ClassHandling { get; set; } = "";
 
-        public string Remarks { get; set; }
+        public string Remarks { get; set; } = "";
 
         public string Status { get; set; } = "Pending";
 
-        public DateTime RequestDate { get; set; } = DateTime.Now; 
+        public DateTime RequestDate { get; set; } = DateTime.Now;
     }
 }
