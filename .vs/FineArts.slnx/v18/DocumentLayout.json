@@ -1,40 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\USER\\Downloads\\Fine-arts\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|c:\\users\\user\\downloads\\fine-arts\\finearts\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|solutionrelative:finearts\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|c:\\users\\user\\downloads\\fine-arts\\finearts\\views\\staff\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|solutionrelative:finearts\\views\\staff\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|c:\\users\\user\\downloads\\fine-arts\\finearts\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|solutionrelative:finearts\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|c:\\users\\user\\downloads\\fine-arts\\finearts\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|solutionrelative:finearts\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|c:\\users\\user\\downloads\\fine-arts\\finearts\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|solutionrelative:finearts\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|c:\\users\\user\\downloads\\fine-arts\\finearts\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|solutionrelative:finearts\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|c:\\users\\user\\downloads\\fine-arts\\finearts\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|solutionrelative:finearts\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|c:\\users\\user\\downloads\\fine-arts\\finearts\\migrations\\20260717042908_student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12ED54C8-C6E1-475F-8D4D-21C53D3B5F61}|FineArts\\FineArts.csproj|solutionrelative:finearts\\migrations\\20260717042908_student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -42,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,110 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Staff.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Models\\Staff.cs",
-              "RelativeDocumentMoniker": "FineArts\\Models\\Staff.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Models\\Staff.cs",
-              "RelativeToolTip": "FineArts\\Models\\Staff.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAcwCQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T15:09:21.155Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "FineArts\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "FineArts\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAFYAAAAgz8zMzEwiwAMAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T08:02:05.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StaffController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Controllers\\StaffController.cs",
-              "RelativeDocumentMoniker": "FineArts\\Controllers\\StaffController.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Controllers\\StaffController.cs",
-              "RelativeToolTip": "FineArts\\Controllers\\StaffController.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAwFgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T06:17:30.71Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Views\\Staff\\Create.cshtml",
-              "RelativeDocumentMoniker": "FineArts\\Views\\Staff\\Create.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Views\\Staff\\Create.cshtml",
-              "RelativeToolTip": "FineArts\\Views\\Staff\\Create.cshtml",
-              "ViewState": "AgIAAAgAAABgzczMzMwnwBcAAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-20T06:17:10.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "FineArts\\Controllers\\StudentController.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "FineArts\\Controllers\\StudentController.cs",
-              "ViewState": "AgIAAKcAAADwLDMzM7MowLoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T05:55:59.721Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "FineArts\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "FineArts\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-20T05:55:36.408Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Views\\Student\\Create.cshtml",
-              "RelativeDocumentMoniker": "FineArts\\Views\\Student\\Create.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Views\\Student\\Create.cshtml",
-              "RelativeToolTip": "FineArts\\Views\\Student\\Create.cshtml",
-              "ViewState": "AgIAAC4AAACALTMzM/MhwDoAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-20T05:52:41.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20260717042908_student.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Migrations\\20260717042908_student.cs",
-              "RelativeDocumentMoniker": "FineArts\\Migrations\\20260717042908_student.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Fine-arts\\FineArts\\Migrations\\20260717042908_student.cs",
-              "RelativeToolTip": "FineArts\\Migrations\\20260717042908_student.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAowDYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T05:53:32.022Z",
-              "EditorCaption": ""
             }
           ]
         }
